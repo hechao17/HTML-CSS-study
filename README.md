@@ -302,7 +302,9 @@ p{font-size:12px;text-indent:2em;}
 水平居中设置-行内元素
 行内元素 还是 块状元素 ，块状元素里面又分为定宽块状元素，以及不定宽块状元素。
 行内元素 text-align：center
-块状元素 
+块状元素
+定宽块状元素：块状元素的宽度width为固定值。
+定宽通过 设置左右margin来居中margin:20px auto;
 
 
 
