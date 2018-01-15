@@ -1,29 +1,30 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<meta charset="utf-8">
-<title>定宽块状元素水平居中</title>
+<meta  charset="utf-8">
+<title>父元素高度确定的多行文本</title>
 <style>
-div{
-    border:1px solid red;
-    margin:20px;
-
-}
-.txtCenter{
-	text-align:center;
-}
-.imgCenter{
-    text-align:center;
-}
-
+  .wrap{height:300px;background:#ccc}
+  .bbc{vertical-align:middle;}
 </style>
 </head>
 
 <body>
-<div class="txtCenter">我想要在父容器中水平居中显示。</div>
+<table><tbody><tr><td class="wrap">
+<div>
+    <p>看我是否可以居中。</p>
+    <p>看我是否可以居中。</p>
+    <p>看我是否可以居中。</p>
+    <p>看我是否可以居中。</p>
+    <p>看我是否可以居中。</p>
+</div>
+</td></tr></tbody></table>
 
-<!--下面是任务部分-->
-
-<div class="imgCenter"><img src="http://img.mukewang.com/52da54ed0001ecfa04120172.jpg" /></div>
+<!--下面是代码任务区-->
+<talbe>
+<div class="bbc">
+    <img src="http://img.mukewang.com/54ffac56000169c001840181.jpg" title="害羞的小女生"/>
+</div>
+</talbe>
 </body>
 </html>

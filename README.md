@@ -306,6 +306,15 @@ p{font-size:12px;text-indent:2em;}
 定宽块状元素：块状元素的宽度width为固定值。
 定宽通过 设置左右margin来居中margin:20px auto;
 
+不定宽度的块状元素有三种方法居
+加入 table 标签
+设置 display: inline 方法：与第一种类似，显示类型设为 行内元素，进行不定宽元素的属性设置
+设置 position:relative 和 left:50%：利用 相对定位 的方式，将元素向左偏移 50% ，即达到居中的目的
+
+垂直居中
+
+
+
 
 
 
