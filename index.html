@@ -1,34 +1,29 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>q标签</title>
-</head>
-<body>
-<p>周瑜，不可否认，他是历史上一个了不起的英雄人物！确实也配的上那句<q>聪明秀出为之英，胆略过人为之雄。</q></p>
-<a href="http://www.baidu.com" target="_blank">baidu</a>
-<a href="mailto:yy@imooc.com ?subject=观了不起的盖茨比有感 &body=你好，对此评论有些想法。">对此影评有何感想，发送邮件给我</a>
-<form method="post" action="save.php">
-      <label for="username">用户名:</label>
-      <input type="text"  name="username" id="username" value="" />
-      <label for="pass">密码:</label>
-      <input type="password"  name="pass" id="pass" value="" />
-      <input type="submit" value="确定"  name="submit" />
-      <input type="reset" value="重置" name="reset" />
-</form>
-<select multiple="multiple">
-    <option value="读书">读书</option>
-    <option value="购物" selected="selected">购物</option>
-</select>
+<meta charset="utf-8">
+<title>定宽块状元素水平居中</title>
+<style>
+div{
+    border:1px solid red;
+    margin:20px;
 
-<form>
-  <label for="male">男</label>
-  <input type="radio" name="gender" id="male" />
-  <br />
-  <label for="female">女</label>
-  <input type="radio" name="gender" id="female" />
-  <label for="email">输入你的邮箱地址</label>
-  <input type="email" id="email" placeholder="Enter email">
-</form>
+}
+.txtCenter{
+	text-align:center;
+}
+.imgCenter{
+    text-align:center;
+}
+
+</style>
+</head>
+
+<body>
+<div class="txtCenter">我想要在父容器中水平居中显示。</div>
+
+<!--下面是任务部分-->
+
+<div class="imgCenter"><img src="http://img.mukewang.com/52da54ed0001ecfa04120172.jpg" /></div>
 </body>
 </html>

@@ -196,7 +196,114 @@ div{
     margin:10px;    
 }
 
-盒模型--填充
+盒模型--填充  
+元素的内容和边框之间是可以设置的
+div{padding:20px 10px 15px 30px;}  等价于
+div{
+   padding-top:20px;
+   padding-right:10px;
+   padding-bottom:15px;
+   padding-left:30px;
+}
+如果上下左右都一致可以这么些 div{padding:10px;}
+如果上下填充一样为10px，左右一样为20px div{padding:10px 20px;}
+
+盒模型--边界
+元素与其它元素之间的距离可以使用边界（margin）来设置
+div{margin:20px 10px 15px 30px;}  顺序也是上右下左
+
+网页的3种基本布局模型，Flow、Layer 和 Float
+流动模型Flow，特点
+块状元素都会在所处的包含元素内自上而下按顺序垂直延伸分布，默认状态下，块状元素的宽度都为100%
+内联元素都会在所处的包含元素内从左到右水平分布显示
+
+让两个块状元素并排显示，可以用浮动模型，通过css中定义
+div{
+    width:200px;
+    height:200px;
+    border:2px red solid;
+    float:left;
+}
+<div id="div1"></div>
+<div id="div2"></div>
+
+层模型
+1、绝对定位(position: absolute)
+2、相对定位(position: relative)
+3、固定定位(position: fixed)
+绝对定位position:absolute;，相对于父包含块的位置
+div{
+    width:200px;
+    height:200px;
+    border:2px red solid;
+    position:absolute;
+    left:100px;
+    top:50px;
+}
+<div id="div1"></div>
+相对定位position:relative，相对于本来的正常位置偏移
+固定定位position:fixed;
+Relative与Absolute组合使用，使得元素块参照父元素布局
+参照定位的元素必须加入position:relative;
+#box1{
+    width:200px;
+    height:200px;
+    position:relative;        
+}
+box2相对box1的位置定位
+#box2{
+    position:absolute;
+    top:20px;
+    left:30px;         
+}
+
+如果top、right、bottom、left的值相同，如下面代码：
+margin:10px 10px 10px 10px;
+
+如果top和bottom值相同、left和 right的值相同，如下面代码：
+margin:10px 20px;
+
+3、如果left和right的值相同
+margin:10px 20px 30px;
+
+当你设置的颜色是16进制的色彩值时，如果每两位的值相同，可以缩写一半
+p{color:#000000;} = p{color: #000;}
+p{color: #336699;} = p{color: #369;}
+
+body{
+    font-style:italic;
+    font-variant:small-caps;
+    font-weight:bold;
+    font-size:12px;
+    line-height:1.5em;
+    font-family:"宋体",sans-serif;
+}
+缩写为
+body{
+    font:italic  small-caps  bold  12px/1.5em  "宋体",sans-serif;
+}
+1、使用这一简写方式你至少要指定 font-size 和 font-family 属性，其他的属性(如 font-weight、font-style、font-variant、line-height)如未指定将自动使用默认值。
+
+2、在缩写时 font-size 与 line-height 中间要加入“/”斜扛。
+有很多中文网站，这样很正常的设置
+body{
+    font:12px/1.5em  "宋体",sans-serif;
+}
+
+p{color:red;}
+p{color:rgb(133,45,200);}
+p{color:rgb(20%,33%,25%);}
+p{color:#00ffff;}
+
+长度值
+px（像素）、em、% 百分比都是相对单位
+p{font-size:12px;text-indent:2em;}
+
+水平居中设置-行内元素
+行内元素 还是 块状元素 ，块状元素里面又分为定宽块状元素，以及不定宽块状元素。
+行内元素 text-align：center
+块状元素 
+
 
 
 
