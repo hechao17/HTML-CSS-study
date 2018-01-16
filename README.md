@@ -86,7 +86,7 @@
 	<input   type="radio/checkbox" value="值" name="名称"   checked="checked"/>
 	同一框中的name必须一致，value是默认的选择
 
-###下拉列表框
+### 下拉列表框
 	其中value是向服务器提交值，selected属性是显示的选项，
 	<select >
 	    <option value="读书">读书</option>
