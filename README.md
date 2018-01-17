@@ -1,3 +1,4 @@
+remote_theme: phodal/mifa-jekyll
 ## HTML&CSS
 
 ### 一些标签的作用
@@ -356,3 +357,38 @@
 		background:pink;/*设置背景颜色为粉色*/
 		text-align:center; /*设置文本居中显示*/
 	}
+
+## 	其它
+	当<a>标签需要引用上一级文件夹的html文件时,父文件夹
+	<a href="../index.html">返回主页</a>
+###
+	<blockquote>创建一个单独的文本，段落前还缩进两个文字，跟<p>类似
+	但是 <blockquote>是个块元素 block：特立独行
+	而<q>是内联元素，inline ：随波逐流
+###
+	h1~h6, p, blockquote都是块元素
+	ol ul li 也是块元素
+
+	q，a, em是内联元素
+
+###
+	< 的缩写是 &lt；
+	> 的缩写是 &gt；
+	&amp 表示 &
+
+###
+	当需要跳转到顶部，或者某个标题时需要通过id来操作，比如标题
+	<h1 id="top"></h1>
+	我们需要通过 <a href="#top">跳转到顶部</a>
+
+### box model
+
+>d
+
+	
+
+
+ 
+
+
+	
