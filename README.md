@@ -356,6 +356,9 @@ remote_theme: phodal/mifa-jekyll
 		height:20px;/*在默认情况下高度不起作用*/
 		background:pink;/*设置背景颜色为粉色*/
 		text-align:center; /*设置文本居中显示*/
+		border-radius：20px； 边框的四角圆角半径
+		border-top-left-radius:20px;
+		vertical-align: top;	//单元格垂直对齐
 	}
 
 ## 	其它
@@ -383,12 +386,69 @@ remote_theme: phodal/mifa-jekyll
 
 ### box model
 
->d
 
+## 关于样式
+一般一个网站有一个基础样式，如果需要修改，并不是直接修改这个样式，而是在基础样式链接下面在链接一个样式。
+
+需要多个样式表，还有一个原因是显示的设备可能是多种，pc，手机，平板...
+link标签中的media属性media="screen and (max-device-width: 480px)"
+
+类似可以创建一个适合打印机的式样 `<link href="xxx.css" rel="stylesheet" media="print">`
+
+查询中其他的属性比如 `min-device-width`，显示方向`orientation`, 可以是横向`landscapa`， 纵向`portrait`；
 	
+	还有max-width,min-width 表示浏览器的实际宽度
 
+在css中也可以直接标记使用的媒体类型,比如：
 
- 
+	@media screen and (min-device-width: 481px) {
+		#guarantee {
+			margin-right: 250px;
+		}		
+	}
+	@media print {
+		#guarantee {
+			margin-right: 250px;
+		}		
+	}
 
+### 
+	<link type="text/css" rel="stylesheet" href="znkj.css" media="screen and (min-width: 481px)">
+  	<link type="text/css" rel="stylesheet" href="mifa.css" media="screen and (max-width: 480px)">
+	我们可以通过这样的方式，当缩放浏览器的宽度时，自动选择不同的样式。
 
+## div and span
+	div 可以叫做 容器
+	就像程序的模块化一样，可以根据内容划分一块块，分别设置不同的式样。
+
+	span就是针对内联标签 模块化的一种标签
+
+	对div增加一个 float:right 的属性 ，可以改变它的排版。
+####
+	流 Flow
+	目前采用的设计都是流体布局，liquid layouts
 	
+####
+	流体和冻结布局 frozen layouts
+	
+	clear: right 属性作用有footer时，可以检查右边有没有否动的元素，
+	如果有就会将footer下移。
+
+## 绝对定位
+	position： absolute;
+	width: 400px;
+	
+	绝对定位会根据相对浏览器的top，left的属性，放置在绝对坐标位置，
+	其他流体元素会将它删除出去，忽略它的存在。
+
+## html5新增加的元素
+	header			页眉
+	section id="main"	内容区
+	aside			滑动
+	footer			页脚
+	nav     		导航
+	atticle			文章
+	time			时间元素，datatime
+	
+	progress 		进度条
+f
